@@ -1,4 +1,4 @@
-package io.back.polaris.models;
+package io.back.polaris.models.database.generics;
 
 import java.io.Serializable;
 import java.util.Date;

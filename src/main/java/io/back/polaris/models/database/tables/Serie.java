@@ -1,8 +1,10 @@
-package io.back.polaris.models;
+package io.back.polaris.models.database.tables;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+
+import io.back.polaris.models.database.generics.Item;
 
 @Entity
 @Table(name = "serie", schema = "polaris_db_a")
@@ -17,12 +19,12 @@ public class Serie extends Item{
     @Column(name = "season_count", nullable = false)
     private int seasonNb;
 
-    public Serie(String title, Ticket ticket, String path, Category category) {
-        super(title, ticket, path, category);
+    public Serie(String title, Ticket ticket, String path) {
+        super(title, ticket, path);
     }
 
-    public Serie(String title, Ticket ticket, String path, Category category, Long tmdbId, int episodesNb, int seasonNb) {
-        super(title, ticket, path, category);
+    public Serie(String title, Ticket ticket, String path, Long tmdbId, int episodesNb, int seasonNb) {
+        super(title, ticket, path);
         this.tmdbId = tmdbId;
         this.episodesNb = episodesNb;
         this.seasonNb = seasonNb;

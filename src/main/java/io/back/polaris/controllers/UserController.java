@@ -1,6 +1,6 @@
 package io.back.polaris.controllers;
 
-import io.back.polaris.models.User;
+import io.back.polaris.models.database.tables.User;
 import io.back.polaris.repositories.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;

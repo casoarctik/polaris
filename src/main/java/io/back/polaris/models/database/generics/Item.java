@@ -1,20 +1,19 @@
-package io.back.polaris.models;
+package io.back.polaris.models.database.generics;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.validation.constraints.Size;
+
+import io.back.polaris.models.database.tables.Ticket;
+import io.back.polaris.models.enums.Category;
 
 @Entity
 @Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
@@ -44,17 +43,15 @@ public abstract class Item extends CreateAndUpdate {
     @Column(name = "path", nullable = false)
     private String path;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(nullable = false)
-    @Enumerated(EnumType.ORDINAL)
-    private Category category;
+    @Column(name = "category", nullable = false)
+    private Integer category;
 
     
-    protected Item(@Size(max = 50) String title, Ticket ticket, String path, Category category) {
+    protected Item(@Size(max = 50) String title, Ticket ticket, String path) {
         this.title = title;
         this.ticket = ticket;
         this.path = path;
-        this.category = category;
+        this.category = ticket.getCategory().getId();
     }
 
     public Long getId() {
@@ -86,11 +83,11 @@ public abstract class Item extends CreateAndUpdate {
     }
 
     public Category getCategory() {
-        return category;
+        return Category.getCategoryById(this.category);
     }
 
     public void setCategory(Category category) {
-        this.category = category;
+        this.category = category.getId();
     }
   
 }

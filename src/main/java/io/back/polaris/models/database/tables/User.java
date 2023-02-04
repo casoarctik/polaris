@@ -1,4 +1,4 @@
-package io.back.polaris.models;
+package io.back.polaris.models.database.tables;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
+
+import io.back.polaris.models.database.generics.CreateAndUpdate;
 
 @Entity
 @Table(name = "user_account", schema = "polaris_db_a")

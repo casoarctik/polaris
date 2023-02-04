@@ -7,14 +7,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.back.polaris.models.Status;
-import io.back.polaris.models.Ticket;
-import io.back.polaris.models.Category;
-import io.back.polaris.models.Movie;
-import io.back.polaris.models.User;
+import io.back.polaris.models.database.tables.Movie;
+import io.back.polaris.models.database.tables.Ticket;
+import io.back.polaris.models.database.tables.User;
+import io.back.polaris.models.enums.Category;
+import io.back.polaris.models.enums.Status;
 import io.back.polaris.repositories.ItemRepository;
 import io.back.polaris.repositories.TicketRepository;
 import io.back.polaris.repositories.UserRepository;
+
 
 @RestController
 @RequestMapping("/api")
@@ -43,11 +44,14 @@ public class TicketController {
     
     @GetMapping("/item")
     public String test2(){
-      Optional<Ticket> opTicket = ticketRepository.findById(2L);
+      Optional<Ticket> opTicket = ticketRepository.findById(1L);
       Ticket ticket = opTicket.isPresent() ? opTicket.get() : null;
-      Movie movie = new Movie("test", ticket, "test/test/test", ticket.getCategory(), 45L);
+      Movie movie = new Movie("test", ticket, "test/test/test", 45L);
       itemRepository.save(movie);
       return itemRepository.findAll().toString();
     }
+
+    
+    
   
 }

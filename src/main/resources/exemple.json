@@ -1,0 +1,125 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/aDYSnJAK0BTVeE8osOy22Kz3SXY.jpg",
+            "genre_ids": [
+                12,
+                28,
+                878
+            ],
+            "id": 11,
+            "media_type": "movie",
+            "original_language": "en",
+            "original_title": "Star Wars",
+            "overview": "Il y a bien longtemps, dans une galaxie très lointaine... La guerre civile fait rage entre l'Empire galactique et l'Alliance rebelle. Capturée par les troupes de choc de l'Empereur menées par le sombre et impitoyable Dark Vador, la princesse Leia Organa dissimule les plans de l’Étoile Noire, une station spatiale invulnérable, à son droïde R2-D2 avec pour mission de les remettre au Jedi Obi-Wan Kenobi. Accompagné de son fidèle compagnon, le droïde de protocole C-3PO, R2-D2 s'échoue sur la planète Tatooine et termine sa quête chez le jeune Luke Skywalker. Rêvant de devenir pilote mais confiné aux travaux de la ferme, ce dernier se lance à la recherche de ce mystérieux Obi-Wan Kenobi, devenu ermite au cœur des montagnes désertiques de Tatooine...",
+            "popularity": 84.814,
+            "poster_path": "/qelTNHrBSYjPvwdzsDBPVsqnNzc.jpg",
+            "release_date": "1977-05-25",
+            "title": "La Guerre des étoiles",
+            "video": false,
+            "vote_average": 8.2,
+            "vote_count": 18185
+        },
+        {
+            "backdrop_path": "/ajztm40qDPqMONaSJhQ2PaNe2Xd.jpg",
+            "first_air_date": "2022-09-21",
+            "genre_ids": [
+                10765,
+                10759,
+                10768
+            ],
+            "id": 83867,
+            "media_type": "tv",
+            "name": "Star Wars : Andor",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Star Wars: Andor",
+            "overview": "En cette ère dangereuse, Cassian Andor emprunte un chemin qui fera de lui un héros de la rébellion.",
+            "popularity": 165.509,
+            "poster_path": "/1jsA4dpbSHBoDrQYVzeq53tvblG.jpg",
+            "vote_average": 8.2,
+            "vote_count": 542
+        },
+        {
+            "adult": false,
+            "gender": 2,
+            "id": 287,
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/1Jpkm9qZcsT0mSyVXgs4VlGjPNI.jpg",
+                    "genre_ids": [
+                        18,
+                        28,
+                        53,
+                        10752
+                    ],
+                    "id": 16869,
+                    "media_type": "movie",
+                    "original_language": "en",
+                    "original_title": "Inglourious Basterds",
+                    "overview": "Dans la France occupée de 1940, un groupe de soldats juifs américains, les bâtards, mène des actions punitives particulièrement sanglantes contre les nazis du Troisième Reich. Leur chemin rencontre celui de Shosanna Dreyfus, une jeune juive réfugiée à Paris exploitante d'une salle de cinéma qui entend elle aussi assouvir sa propre vengeance envers les nazis.",
+                    "poster_path": "/3yOfQLerEO2Qnb1VkSJ8WG3c0Jx.jpg",
+                    "release_date": "2009-08-19",
+                    "title": "Inglourious Basterds",
+                    "video": false,
+                    "vote_average": 8.2,
+                    "vote_count": 19734
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/hh28CTWLdxTXA5yJgefZ6gUnFDo.jpg",
+                    "genre_ids": [
+                        80,
+                        9648,
+                        53
+                    ],
+                    "id": 807,
+                    "media_type": "movie",
+                    "original_language": "en",
+                    "original_title": "Se7en",
+                    "overview": "Pour conclure sa carrière, l’inspecteur Somerset, vieux flic blasé, tombe à sept jours de la retraite sur un criminel peu ordinaire. John Doe, c’est ainsi que se fait appeler l’assassin, a décidé de nettoyer la société des maux qui la rongent en commettant sept meurtres basés sur les sept péchés capitaux: La gourmandise, l’avarice, la paresse, l’orgueil, la luxure, l’envie et la colère.",
+                    "poster_path": "/moHx8JGzIdEAMLj1CqDzcLYhMRY.jpg",
+                    "release_date": "1995-09-22",
+                    "title": "Seven",
+                    "video": false,
+                    "vote_average": 8.4,
+                    "vote_count": 18260
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/kg2FOT2Oe5PSCgs3L4vLel6B7ck.jpg",
+                    "genre_ids": [
+                        28,
+                        18,
+                        27,
+                        878,
+                        53
+                    ],
+                    "id": 72190,
+                    "media_type": "movie",
+                    "original_language": "en",
+                    "original_title": "World War Z",
+                    "overview": "Gerry Lane se lance dans une course contre la montre pour aider le monde à surmonter ses divisions et faire face à l'apocalypse. Dans tous les pays, par tous les moyens, chacun devra se battre car l'humanité n'aura plus qu'un seul espoir de survie : La guerre.",
+                    "poster_path": "/xqk3gTrNODmH90QEgeBgEIHN1Fu.jpg",
+                    "release_date": "2013-06-20",
+                    "title": "World War Z",
+                    "video": false,
+                    "vote_average": 6.8,
+                    "vote_count": 13766
+                }
+            ],
+            "known_for_department": "Acting",
+            "media_type": "person",
+            "name": "Brad Pitt",
+            "popularity": 47.321,
+            "profile_path": "/oTB9vGIBacH5aQNS0pUM74QSWuf.jpg"
+        }
+    ],
+    "total_pages": 10,
+    "total_results": 184
+}
